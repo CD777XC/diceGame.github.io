@@ -1,0 +1,91 @@
+*{padding: 0; margin: 0;}
+body{
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    box-sizing: border-box;
+    background-color: darkseagreen;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+}
+
+#message{
+    font-size: 40px;
+    text-decoration: 2px underline;
+}
+
+.container, 
+.players {
+    padding: 50px 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: beige;
+    box-shadow: -2px 6px 18px 3px rgba(0, 0, 0, 0.75);
+    border: 5px solid orange;
+    border-radius: 3px;
+}
+
+.players{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.dice{
+    width: 80px;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 30px 20px;
+    background-color: rgba(222, 184, 135, 0.5);
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    padding: 20px 30px;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 24px;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px #000;
+    display: none;
+}
+
+#rollBtn{
+    background-color: palevioletred;
+}
+#resetBtn{
+    background-color: lightcoral;
+}
+#startBtn{
+    background-color: rgba(69, 69, 177, 0.9);
+    display: inline;
+}
+#rollBtn:hover{
+    background-color: rgba(216, 112, 147, 0.75);
+}
+#resetBtn:hover{
+    background-color: rgba(240, 128, 128, 0.75);
+}
+#startBtn:hover {
+    background-color: rgba(69, 69, 177, 0.65);
+}
+button:focus{
+    outline: 2px solid purple;
+}
+
+.active{
+    box-shadow: 2px 2px 15px 3px rgba(0, 0, 0, 0.6);
+}
+
