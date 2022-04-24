@@ -10,6 +10,8 @@ let player2 = {
 
 let p1Turn = true
 
+// Hide container
+
 // Score, player and dice
 
 const turnMsg = document.querySelector('#message')
@@ -25,8 +27,6 @@ const resetBtn = document.querySelector('#resetBtn')
 const startBtn = document.querySelector('#startBtn')
 
 // Dice Game ⬇️
-
-turnMsg.textContent = 'Want to play ? 🎮'
 
 
 startBtn.addEventListener('click', function(){
@@ -69,5 +69,9 @@ resetBtn.addEventListener('click', function(){
     p2Score.textContent = player2.score
     resetBtn.style.display = ''
     startBtn.style.display = ''
+    p1Dice.classList.add('active')
+    p2Dice.classList.remove('active')
     turnMsg.textContent = 'Want to play ? 🎮'
 })
+
+// Add an even issue --> if player1 && player2 have 20 play last round !
